@@ -22,8 +22,8 @@ void enq(int data,int MAX)
     }
     else
     {
-    	if(qcount<MAX){			// until 10 elements added to queue...
-        	temp=(struct node *)malloc(1*sizeof(struct node));//create new node.
+    	if(qcount<MAX){			// check if queue reached maximum number of elements.
+        	temp=(struct node *)malloc(1*sizeof(struct node));// if not create new node.
         	temp->info = data;	// new node holds new data input...
        		temp->ptr = NULL;	//...and it addresses NULL.
        		last->ptr = temp;	// newly added node is named as last.
