@@ -14,8 +14,8 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <C:\Users\muham\CCS_workspace_v7\Term Project\LCD_MSP430.h>
-#include <C:\Users\muham\CCS_workspace_v7\Term Project\Temperature.h>
+#include <LCD_MSP430.h>
+#include <Temperature.h>
 
 
 /*
