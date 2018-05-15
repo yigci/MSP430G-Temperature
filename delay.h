@@ -5,7 +5,7 @@ void delay(int i)
 	int k,m;					// variables. m is used as multiplier of k.
 	for(m=i;m>0;m--){
 		for(k=1000;k>0;k--){	//	k is set to 1000 each delay cycle.
-			P1OUT ^= 0x01;		// toggle led. (purpose is to be aware of 
+			P1OUT ^= 0x01;		// toggle led. (purpose is to be aware of
 								// program is in delay function. 
 		}
 	}
