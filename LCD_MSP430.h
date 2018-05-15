@@ -49,12 +49,12 @@ void LCD_DataToWrite (char* row_1,char* row_2)
 
 /*
  * LCD_sentinfo function is the interface between LCD and program. Each function call
- * it sends out data.
- *
+   it sends out data.
+ 
  * LCD has two different inputs. One is data and the other is command. To recognize
- * which kind of info is going to be sent we used an additional variable. 'c' means
- * command and 'd' means data.
- *
+   which kind of info is going to be sent we used an additional variable. 'c' means
+   command and 'd' means data.
+  
  * To send out data to I2C module of LCD we used microcontroller as Master Transmitter.
  */
 void LCD_sentinfo(char type, int data)
@@ -71,7 +71,7 @@ void LCD_sentinfo(char type, int data)
 }
 
 /*
- * LCD_set_Point function is used to set position of currsor.
+ * LCD_set_Point function is used to set position of cursor.
  * It's purpose in our project to differentiate lines.
  * 0x80 means beginning of the first line
  * 0xC0 means beginning of the second line
