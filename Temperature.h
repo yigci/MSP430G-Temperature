@@ -1,4 +1,4 @@
-#include <C:\Users\muham\CCS_workspace_v7\Term Project\queue.h>
+#include <queue.h>
 int Temperature,total,average;			// necessary variables to get temperature and average.
 void Get_Average(void)					
 {

@@ -2,7 +2,8 @@ unsigned int ReceiveByte;						// Number of bytes to receive.
 unsigned int TXByteCtr;							// Number of bytes to transmit.
 void i2c_set(int);								// function definition.
 
-void i2c_set(int type){
+void i2c_set(int type)
+{
 	if(type==1){								// type 1 represents transmission.
 		UCB0CTL1 |= UCSWRST;                    // Enable SW reset
 		UCB0CTL0 = UCMST+UCMODE_3+UCSYNC;       // I2C Master, synchronous mode

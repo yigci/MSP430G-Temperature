@@ -1,5 +1,5 @@
-#include <C:\Users\muham\CCS_workspace_v7\Term Project\delay.h>
-#include <C:\Users\muham\CCS_workspace_v7\Term Project\i2c_settings.h>
+#include <delay.h>
+#include <i2c_settings.h>
 
 ////////////////////// FUNCTION DEFINITIONS ////////////////////////
 void LCD_clear(void);
@@ -16,7 +16,7 @@ char line_1[16];
 char line_2[16];
 
 /********************* Initial settings for LCD *******************/
-// Function codes for LCD obtained from function table of LCD.
+//  Function codes for LCD obtained from function table of LCD.   //
 void LCD_initial(void)
 {
     LCD_sentinfo('c', 0x38);           // "00101000" 8 pin, 2 line, 5x7 character
@@ -61,7 +61,7 @@ void LCD_sentinfo(char type, int data)
 {
 	i2c_set(1);								//Master transmitter is selected.
     if(type == 'c')	P1OUT &= ~BIT1;			//Check if the info is command
-    else if(type == 'd')	P1OUT |= BIT1;	//..else data.
+    else if(type == 'd')	P1OUT |= BIT1;	//...or data.
 
     	i2cData = data;						//Global variable to hold current data.
         UCB0CTL1 |= UCTR + UCTXSTT;         // I2C TX, start condition
