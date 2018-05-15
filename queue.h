@@ -38,7 +38,7 @@ void enq(int data,int MAX)
         temp->ptr = NULL;
 		last->ptr = temp;		// new node now added to end of the queue.
         last = last->ptr;		// last node is updated.
-		denominator=MAX;		// set denominator to 10;
+		denominator=MAX;		// set denominator to maximum value possible.
 		qcount=9;				// to keep queue running properly we set qcount to 9...
 								//...and increase it in the next line.
 	}

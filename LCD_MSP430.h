@@ -1,5 +1,6 @@
 #include <C:\Users\muham\CCS_workspace_v7\Term Project\delay.h>
 #include <C:\Users\muham\CCS_workspace_v7\Term Project\i2c_settings.h>
+
 ////////////////////// FUNCTION DEFINITIONS ////////////////////////
 void LCD_clear(void);
 void LCD_initial(void);
@@ -7,6 +8,7 @@ void LCD_set_Point(unsigned int, unsigned int);
 void LCD_DataToWrite (char*,char*);
 void LCD_sentinfo(char, int);
 char* itoa(unsigned int,char*);
+
 /////////////////////// GLOBAL VARIABLES ///////////////////////////
 int i2cData;
 char str[3];
@@ -38,7 +40,7 @@ void LCD_DataToWrite (char* row_1,char* row_2)
     	LCD_sentinfo('d', row_1[i++]);	//send current character to LCD_sentinfo func.
     }
 	i=0;
-	delay(50);	//set current character to 0.
+	
 	LCD_set_Point(2, 1);				//set position for second line.
 	while(row_2[i]){					//loop for sending out first line.
 		LCD_sentinfo('d', row_2[i++]);	//send current character to LCD_sentinfo func.

@@ -1,5 +1,5 @@
 unsigned int ReceiveByte;						// Number of bytes to receive.
-int TXByteCtr;									// Number of bytes to transmit.
+unsigned int TXByteCtr;							// Number of bytes to transmit.
 void i2c_set(int);								// function def.
 
 void i2c_set(int type){
