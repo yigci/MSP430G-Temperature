@@ -4,7 +4,8 @@ void Get_Average(void)
 {
 	__disable_interrupt();
 	total=0;							// Set total to zero.
-	temp=first;							// Hold first element of queue in a temporary pointer
+	temp=first;							// Hold first element of queue in a temporary pointer.
+	
 	while(temp!=NULL){					// Until temp is NULL...
 		total+=temp->info;				// Do summation.
 		temp=temp->ptr;					// Move to next node.
