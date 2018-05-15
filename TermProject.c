@@ -1,13 +1,13 @@
 /*
  * DOKUZ EYLUL UNIVERSITY - Department of Electrical and Electronics engineering
  * This project is designed for EED3018 Microprocessor Systems laboratory work.
- * Last Edit: 15/05/2018- 15:42
+ * Last Edit: 15/05/2018
  * Project: Thermometer with Digital Temperature Sensor and LCD using I2C interface.
  * Written by: Muhammet YIGCI and Salim ONDER
  * Purpose: Aim of this project is to create a thermometer system that reads temperature
- * from digital temperature sensor via I2C data interface and write it to LCD via I2C
- * data interface. Also project is required to calculate the average of last 10
- * measurements. The average is also must be shown in LCD.
+   from digital temperature sensor via I2C data interface and write it to LCD via I2C
+   data interface. Also project is required to calculate the average of last 10
+   measurements. The average is also must be shown in LCD.
  */
 
 #include <msp430.h>
